@@ -7,7 +7,7 @@ distracting.
 Very basic installation and operation instructions but you should know how to do
 this, its more a morbid curisity more than anything else. 
 
-```
+```bash
 go get
 go build
 cd static ./generate-static.sh & cd .. 
