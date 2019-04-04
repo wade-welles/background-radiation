@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"strconv"
 	"time"
 
@@ -8,9 +9,10 @@ import (
 )
 
 func main() {
-	background, err := wallpaper.Get()
-	if err != nil {
+	if background, err := wallpaper.Get(); err != nil {
 		panic(err)
+	} else {
+		fmt.Println("Current background is: ", background)
 	}
 	// Generate static
 	//mx=320;my=256;head -c "$((3*mx*my))" /dev/urandom | convert -depth 8 -size
